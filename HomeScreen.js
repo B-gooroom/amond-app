@@ -24,8 +24,8 @@ export default function HomeScreen() {
         onLoadEnd={onWebViewLoad}
         onLoadStart={() => setIsWebViewLoading(true)} // 로드 시작 시 로딩 표시
         javaScriptEnabled={true}
-        // source={{ uri: "https://amond.kr/QnA" }}
-        source={{ uri: "http://192.168.35.253:3000/QnA" }}
+        source={{ uri: "https://www.amond.kr/qna" }}
+        // source={{ uri: "http://192.168.35.253:3000/qna" }}
         onMessage={(event) => {
           const message = event.nativeEvent.data;
           // console.log("Message received from web:", message);

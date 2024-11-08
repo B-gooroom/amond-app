@@ -22,8 +22,8 @@ export default function ProfileScreen() {
         onLoadEnd={onWebViewLoad}
         onLoadStart={() => setIsWebViewLoading(true)} // 로드 시작 시 로딩 표시
         javaScriptEnabled={true}
-        // source={{ uri: "https://amond.kr/Profile" }}
-        source={{ uri: "http://192.168.35.253:3000/Profile" }}
+        source={{ uri: "https://www.amond.kr/profile" }}
+        // source={{ uri: "http://192.168.35.253:3000/profile" }}
         onMessage={(event) => {
           const message = event.nativeEvent.data;
           // console.log("Message received from web:", message);

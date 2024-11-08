@@ -25,8 +25,8 @@ export default function BoardScreen() {
         onLoadEnd={onWebViewLoad}
         onLoadStart={() => setIsWebViewLoading(true)} // 로드 시작 시 로딩 표시
         javaScriptEnabled={true}
-        // source={{ uri: "https://amond.kr/Board" }}
-        source={{ uri: "http://192.168.35.253:3000/Board" }}
+        source={{ uri: "https://www.amond.kr/board" }}
+        // source={{ uri: "http://192.168.35.253:3000/board" }}
         onMessage={(event) => {
           const message = event.nativeEvent.data;
           // console.log("Message received from web:", message);
